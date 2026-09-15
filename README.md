@@ -176,6 +176,10 @@ ese archivo y se saca una captura de 1200×630 px.
 Importante: **tiene que ser PNG o JPG**. WhatsApp y Facebook no muestran
 imágenes SVG en la vista previa.
 
+Lo mismo pasa con el ícono para la pantalla de inicio del celular
+(`assets/img/apple-touch-icon.png`): iOS tampoco acepta SVG ahí. Sale de
+`assets/img/icono-source.html`, igual que la imagen de compartir.
+
 ---
 
 ## 7. Poner el link en Instagram
@@ -191,6 +195,7 @@ Conviene además fijarlo en una historia destacada y mencionarlo en la bio
 ```
 index.html                  todo el contenido de la página
 vercel.json                 configuración del deploy (cache y headers)
+manifest.webmanifest        nombre e ícono al agregar la web a la pantalla de inicio
 robots.txt / sitemap.xml    para que Google la encuentre
 assets/
   css/styles.css            estilos (los colores están arriba de todo, en :root)
