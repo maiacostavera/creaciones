@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="Cuadro decorativo — foto de muestra">
+  <defs>
+    <linearGradient id="g7" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F4E6D9"/>
+      <stop offset="100%" stop-color="#DEC2A6"/>
+    </linearGradient>
+    <pattern id="p7" width="56" height="56" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <circle cx="14" cy="14" r="2.5" fill="#9C6B44" opacity="0.18"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="800" fill="url(#g7)"/>
+  <rect width="800" height="800" fill="url(#p7)"/>
+  <circle cx="400" cy="290" r="96" fill="none" stroke="#9C6B44" stroke-width="3" opacity="0.5"/>
+  <path d="M352 318 l34 -40 28 30 20 -22 34 32" fill="none" stroke="#9C6B44" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.75"/>
+  <circle cx="372" cy="262" r="11" fill="#9C6B44" opacity="0.65"/>
+  <text x="400" y="430" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="46" fill="#9C6B44">Cuadro decorativo</text>
+  <text x="400" y="500" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" letter-spacing="3" fill="#9C6B44" opacity="0.7">FOTO DE MUESTRA</text>
+</svg>
