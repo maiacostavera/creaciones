@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Creaciones Abi · Creaciones artesanales y regalos personalizados</title>
-<meta name="description" content="Creaciones artesanales hechas a mano: velas, accesorios, personalizados y regalos. Pedidos y consultas por WhatsApp.">
-<meta name="theme-color" content="#B07D56">
+<title>Creaciones Abi · Decoración y golosinas personalizadas</title>
+<meta name="description" content="Decoración, bolsitas y golosinas personalizadas para cumpleaños. Tazas, termos y stickers con el diseño que quieras. Pedidos por WhatsApp.">
+<meta name="theme-color" content="#DB4E96">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/img/favicon.svg">
 <link rel="canonical" href="https://creaciones-abi.vercel.app/">
@@ -14,15 +14,15 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_AR">
 <meta property="og:site_name" content="Creaciones Abi">
-<meta property="og:title" content="Creaciones Abi · Hecho a mano, pensado para vos">
-<meta property="og:description" content="Velas, accesorios y regalos personalizados hechos a mano. Mirá el catálogo y hacé tu pedido por WhatsApp.">
+<meta property="og:title" content="Creaciones Abi · Hacemos que cada celebración sea especial">
+<meta property="og:description" content="Bolsitas, golosinas y decoración personalizada para cumpleaños. Tazas, termos y stickers. Mirá el catálogo y pedí por WhatsApp.">
 <meta property="og:url" content="https://creaciones-abi.vercel.app/">
 <meta property="og:image" content="https://creaciones-abi.vercel.app/assets/img/og-image.svg">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="preload" href="assets/fonts/quicksand-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/baloo2-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/fonts.css">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -40,7 +40,7 @@
       <span class="brand-mark" aria-hidden="true">A</span>
       <span class="brand-text">
         <strong data-site="marca">Creaciones Abi</strong>
-        <small data-site="tagline">Hecho a mano, pensado para vos</small>
+        <small data-site="tagline">Decoración y golosinas personalizadas</small>
       </span>
     </a>
 
@@ -67,9 +67,9 @@
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-copy">
-        <p class="eyebrow">Emprendimiento artesanal</p>
-        <h1>Creaciones hechas <em>a mano</em>, de a una.</h1>
-        <p class="lead" data-site="descripcion">Creaciones artesanales y regalos personalizados. Cada pieza se hace a pedido, con tiempo y detalle.</p>
+        <p class="eyebrow">Cumpleaños · Personalizados · Stickers</p>
+        <h1>Hacemos que cada celebración sea <em>especial</em></h1>
+        <p class="lead" data-site="descripcion">Bolsitas, golosinas y decoración personalizada para cumpleaños. Tazas, termos y stickers con el diseño que quieras.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#catalogo">Ver catálogo</a>
           <a class="btn btn-wa" data-wa-general href="#">
@@ -78,8 +78,8 @@
           </a>
         </div>
         <ul class="hero-badges">
-          <li>✋ 100% artesanal</li>
-          <li>🎁 Personalizados</li>
+          <li>🎈 Temática a elección</li>
+          <li>🎁 Todo personalizado</li>
           <li>📦 Envíos a todo el país</li>
         </ul>
       </div>
@@ -106,14 +106,14 @@
       <header class="section-head">
         <p class="eyebrow">Todo lo que hago</p>
         <h2>Catálogo</h2>
-        <p class="section-sub">Tocá cualquier producto para ver el detalle, o escribime directo por WhatsApp.</p>
+        <p class="section-sub">Tocá cualquier producto para ver el detalle, o escribime directo por WhatsApp. Todo se hace a pedido y con la temática que elijas.</p>
       </header>
 
       <div class="toolbar">
         <div class="search">
           <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 2a8 8 0 1 0 4.9 14.3l5.4 5.4 1.4-1.4-5.4-5.4A8 8 0 0 0 10 2Zm0 2a6 6 0 1 1 0 12 6 6 0 0 1 0-12Z"/></svg>
           <label class="sr-only" for="buscador">Buscar productos</label>
-          <input type="search" id="buscador" placeholder="Buscar: vela, llavero, regalo…" autocomplete="off">
+          <input type="search" id="buscador" placeholder="Buscar: bolsitas, taza, stickers…" autocomplete="off">
         </div>
         <div class="filtros" id="filtros" role="group" aria-label="Filtrar por categoría"></div>
       </div>
@@ -128,7 +128,7 @@
     <div class="container">
       <header class="section-head">
         <p class="eyebrow">Fácil y sin vueltas</p>
-        <h2>Cómo comprar</h2>
+        <h2>Cómo hacer tu pedido</h2>
       </header>
       <ol class="pasos" id="pasos"></ol>
     </div>
@@ -153,7 +153,7 @@
       <header class="section-head">
         <p class="eyebrow">Hablemos</p>
         <h2>Contacto</h2>
-        <p class="section-sub">La forma más rápida es WhatsApp. Te respondo apenas puedo.</p>
+        <p class="section-sub">La forma más rápida es WhatsApp. Contame qué necesitás y te paso el presupuesto.</p>
       </header>
 
       <div class="contacto-grid">

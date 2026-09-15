@@ -46,7 +46,10 @@
 
   function mensajeProducto(p) {
     var base = CFG.mensajeBase || "Hola! Quería consultarte por";
-    return base + " *" + p.nombre + "*" + (p.precioTexto || p.precio ? " (" + precioTexto(p) + ")" : "") + ". ¿Me contás cómo seguimos?";
+    // El precio va en el mensaje solo si es un importe; "Consultar" no aporta nada.
+    var hayImporte = typeof p.precio === "number" && !isNaN(p.precio);
+    var importe = hayImporte ? " (" + precioTexto(p) + ")" : "";
+    return base + " *" + p.nombre + "*" + importe + ". ¿Me contás cómo seguimos?";
   }
 
   function texto(el, valor) { if (el) el.textContent = valor; }
