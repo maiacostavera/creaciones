@@ -5,16 +5,21 @@ catálogo de productos y contacto directo por WhatsApp. Pensada para publicarse
 en Vercel y poner el link en la bio de Instagram.
 
 **Ya están cargados:** el nombre, el WhatsApp (11 2575-0730), el Instagram
-(@crecionesabi) y los 8 productos, con los colores del flyer.
+(@crecionesabi), los 9 productos con los colores del flyer, y las fotos de
+bolsitas, tazas y tarjetas.
 
-**Falta:** las fotos reales y los precios. Abajo está cómo cargarlos.
+**Falta:** las fotos de golosinas, decoración, kit, termo y stickers, y los
+precios. Abajo está cómo cargarlos.
 
 ---
 
 ## 1. Subir las fotos (lo más importante)
 
-Hoy cada producto muestra un dibujito provisorio que dice "FALTA LA FOTO".
-Para poner las fotos de verdad:
+Los productos que todavía no tienen foto muestran un dibujito provisorio que
+dice "FALTA LA FOTO". Hoy son: golosinas, decoración, kit de cumpleaños, termo,
+plancha de stickers y stickers individuales.
+
+Para cargar las que faltan:
 
 ### Desde la web de GitHub, sin instalar nada
 
@@ -38,6 +43,19 @@ imagen: "assets/img/productos/bolsitas-spiderman.jpg",
   rápido desde el celular.
 - Con buena luz y fondo prolijo. La primera foto de cada producto es la que más
   se ve, así que conviene que sea la mejor.
+
+### Varias fotos para un mismo producto
+
+Si tenés más de una foto de lo mismo, van en `imagenes` y aparecen como
+miniaturas al abrir el producto:
+
+```js
+imagen: "assets/img/productos/taza-maestra.jpg",
+imagenes: ["assets/img/productos/taza-personajes.jpg"],
+```
+
+La de `imagen` es la que se ve en el catálogo; las de `imagenes` se suman a la
+galería. Con una sola foto, las miniaturas no aparecen.
 
 ---
 
@@ -205,6 +223,8 @@ Google Fonts y carga más rápido.
 - **Botón flotante de WhatsApp** siempre visible.
 - **Link directo a un producto**: `…/#p-taza-personalizada` abre la página con ese
   producto ya desplegado. Sirve para pasarle a alguien un modelo puntual.
+- **Galería por producto**: si un producto tiene varias fotos, se ven como
+  miniaturas al abrirlo.
 - **Vista previa al compartir** el link (imagen, título y descripción).
 - **Cero dependencias**: no hay que instalar ni mantener nada.
 
@@ -213,6 +233,5 @@ Google Fonts y carga más rápido.
 ## Ideas para más adelante
 
 - Carrito simple que junte varios productos en un solo mensaje de WhatsApp.
-- Galería con varias fotos por producto (el campo `imagenes` ya está preparado).
 - Sección de testimonios o fotos de cumpleaños ya entregados.
 - Formulario de pedidos: temática, cantidad de invitados y fecha del cumple.

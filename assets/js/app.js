@@ -277,6 +277,7 @@
     var img = $("#modalImg");
     img.src = p.imagen || "assets/img/favicon.svg";
     img.alt = p.nombre;
+    pintarMiniaturas(p, img);
     texto($("#modalCat"), p.categoria || "");
     texto($("#modalTitulo"), p.nombre);
     texto($("#modalPrecio"), precioTexto(p));
@@ -302,6 +303,39 @@
     if (p.id && history.replaceState) {
       history.replaceState(null, "", "#p-" + p.id);
     }
+  }
+
+  function pintarMiniaturas(p, img) {
+    var tira = $("#modalMiniaturas");
+    if (!tira) return;
+
+    var fotos = [p.imagen].concat(p.imagenes || []).filter(Boolean);
+    tira.innerHTML = "";
+    tira.hidden = fotos.length < 2;
+    if (tira.hidden) return;
+
+    fotos.forEach(function (src, i) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.setAttribute("aria-label", "Ver foto " + (i + 1) + " de " + fotos.length);
+      b.setAttribute("aria-current", i === 0 ? "true" : "false");
+
+      var mini = document.createElement("img");
+      mini.src = src;
+      mini.alt = "";
+      mini.loading = "lazy";
+      b.appendChild(mini);
+
+      b.addEventListener("click", function () {
+        img.src = src;
+        $$("button", tira).forEach(function (otro) {
+          otro.setAttribute("aria-current", "false");
+        });
+        b.setAttribute("aria-current", "true");
+      });
+
+      tira.appendChild(b);
+    });
   }
 
   function cerrarModal() {
