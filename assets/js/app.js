@@ -338,6 +338,28 @@
     });
   }
 
+  // Con el detalle abierto, el tabulador se queda adentro en lugar de
+  // irse a la página de atrás, que el modal tapa.
+  function atraparFoco(e) {
+    var modal = $("#modal");
+    if (!modal || modal.hidden) return;
+
+    var focusables = $$('a[href], button:not([disabled]), input:not([disabled])', modal)
+      .filter(function (el) { return el.offsetParent !== null; });
+    if (!focusables.length) return;
+
+    var primero = focusables[0];
+    var ultimo = focusables[focusables.length - 1];
+
+    if (e.shiftKey && document.activeElement === primero) {
+      e.preventDefault();
+      ultimo.focus();
+    } else if (!e.shiftKey && document.activeElement === ultimo) {
+      e.preventDefault();
+      primero.focus();
+    }
+  }
+
   function cerrarModal() {
     var modal = $("#modal");
     if (!modal || modal.hidden) return;
@@ -403,6 +425,7 @@
     });
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape") cerrarModal();
+      if (e.key === "Tab") atraparFoco(e);
     });
 
     // Link directo a un producto: ...#p-vela-soja-lavanda
