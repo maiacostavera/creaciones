@@ -106,18 +106,18 @@ window.PRODUCTOS = [
   },
   {
     id: "termo-personalizado",
-    nombre: "Termo individual personalizado",
+    nombre: "Termos y botellas personalizadas",
     categoria: "Personalizados",
     precio: null,
     precioTexto: "Consultar precio",
-    descripcion: "Con sorbete y tapa, ideal para el mate o el café.",
+    descripcion: "Con sorbete para el mate, o con pico deportivo para llevar.",
     detalle:
-      "Termo individual con tapa y sorbete, personalizado con el diseño, el dibujo o la frase que elijas. Mantiene la temperatura y es perfecto para llevar a todos lados. Un regalo que se usa todos los días.",
-    imagen: "assets/img/productos/termo-personalizado.svg",
-    imagenes: [],
+      "Termos y botellas individuales personalizadas con el diseño, el personaje o la frase que elijas. Los hay con tapa y sorbete, ideales para el mate, y con pico deportivo para el gimnasio o el trabajo. Mantienen la temperatura y son un regalo que se usa todos los días.",
+    imagen: "assets/img/productos/termo-capibara.jpg",
+    imagenes: ["assets/img/productos/termo-yopuedo.jpg"],
     destacado: true,
     disponible: true,
-    etiquetas: ["termo", "vaso", "mate", "cafe", "personalizado", "regalo", "sorbete"],
+    etiquetas: ["termo", "botella", "vaso", "mate", "cafe", "gimnasio", "personalizado", "regalo", "sorbete", "deportiva"],
   },
   {
     id: "tarjetas-emprendimientos",
@@ -143,7 +143,7 @@ window.PRODUCTOS = [
     descripcion: "Varios stickers en una hoja, con los diseños que elijas.",
     detalle:
       "Plancha con varios stickers en una misma hoja: personajes, frases, memes o lo que quieras. Se imprimen en buena calidad y se pueden armar planchas totalmente a pedido con tus diseños favoritos.",
-    imagen: "assets/img/productos/plancha-stickers.svg",
+    imagen: "assets/img/productos/plancha-stickers.jpg",
     imagenes: [],
     destacado: true,
     disponible: true,

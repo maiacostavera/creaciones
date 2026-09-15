@@ -6,18 +6,18 @@ en Vercel y poner el link en la bio de Instagram.
 
 **Ya están cargados:** el nombre, el WhatsApp (11 2575-0730), el Instagram
 (@crecionesabi), los 9 productos con los colores del flyer, y las fotos de
-bolsitas, tazas y tarjetas.
+bolsitas, tazas, termos, plancha de stickers y tarjetas.
 
-**Falta:** las fotos de golosinas, decoración, kit, termo y stickers, y los
-precios. Abajo está cómo cargarlos.
+**Falta:** las fotos de golosinas, decoración, kit de cumpleaños y stickers
+individuales, y los precios. Abajo está cómo cargarlos.
 
 ---
 
 ## 1. Subir las fotos (lo más importante)
 
 Los productos que todavía no tienen foto muestran un dibujito provisorio que
-dice "FALTA LA FOTO". Hoy son: golosinas, decoración, kit de cumpleaños, termo,
-plancha de stickers y stickers individuales.
+dice "FALTA LA FOTO". Hoy son: golosinas, decoración, kit de cumpleaños y
+stickers individuales.
 
 Para cargar las que faltan:
 
@@ -41,6 +41,9 @@ imagen: "assets/img/productos/bolsitas-spiderman.jpg",
 - **Cuadradas** (1:1). Si son rectangulares, la web las recorta al centro.
 - Alrededor de **1000×1000 px** y **menos de 300 KB** cada una, para que cargue
   rápido desde el celular.
+- **Mejor la foto original que una captura de pantalla.** Una captura sacada de
+  una historia o un video llega con 300 px de lado y se ve blanda al abrir el
+  producto en pantalla grande. La foto que sacaste con el celular tiene de sobra.
 - Con buena luz y fondo prolijo. La primera foto de cada producto es la que más
   se ve, así que conviene que sea la mejor.
 
