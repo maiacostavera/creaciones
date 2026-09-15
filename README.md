@@ -144,38 +144,43 @@ Después entrá a `http://localhost:8000`.
 
 ---
 
-## 6. Publicar en Vercel
+## 6. La web publicada
 
-1. Entrá a [vercel.com](https://vercel.com) y **Sign Up → Continue with GitHub**.
-2. **Add New… → Project** y elegí el repositorio `creaciones`.
-3. En *Framework Preset* dejá **Other**. No toques los campos de build: están
-   vacíos a propósito, porque el sitio no necesita compilarse.
-4. Clic en **Deploy**. En menos de un minuto queda online en una dirección tipo
-   `https://creaciones.vercel.app`.
+El sitio está online en **https://creacionesabi.vercel.app/**, con Vercel
+conectado a este repositorio en la rama `main`.
 
-Desde ahí, **cada cambio que se suba a GitHub actualiza la web sola**.
+**Cada cambio que se suba a `main` actualiza la web sola**, en menos de un
+minuto. No hay que entrar a Vercel para nada.
+
+### Si algo no aparece en la web
+
+1. Fijate que el cambio esté en GitHub, en la rama `main`.
+2. En [vercel.com/dashboard](https://vercel.com/dashboard), abrí el proyecto y
+   mirá **Deployments**: ahí figura si el último salió bien o falló.
 
 ### Dominio propio (opcional)
 
 En **Settings → Domains** del proyecto se puede conectar un dominio propio
 (`creacionesabi.com.ar`, por ejemplo). El certificado HTTPS lo da Vercel, gratis.
+Si algún día se cambia de dirección, hay que actualizarla en `index.html`
+(`canonical`, `og:url`, `og:image`), `assets/data/config.js`, `robots.txt` y
+`sitemap.xml`.
 
-### Después de publicar
+### La vista previa al compartir
 
-Reemplazá `https://creaciones-abi.vercel.app` por la dirección definitiva en:
+Cuando el link se pasa por WhatsApp o se pone en Instagram, aparece con título,
+descripción e imagen. Esa imagen es `assets/img/og-image.png` y se genera a
+partir de `assets/img/og-source.html`: si hay que cambiarle el texto, se edita
+ese archivo y se saca una captura de 1200×630 px.
 
-- `index.html` → las etiquetas `canonical`, `og:url` y `og:image`
-- `assets/data/config.js` → el campo `url`
-- `robots.txt` y `sitemap.xml`
-
-Eso hace que, al compartir el link por WhatsApp, aparezca la vista previa con
-título, descripción e imagen.
+Importante: **tiene que ser PNG o JPG**. WhatsApp y Facebook no muestran
+imágenes SVG en la vista previa.
 
 ---
 
 ## 7. Poner el link en Instagram
 
-Editar perfil → **Sitio web** → pegar la dirección de Vercel.
+Editar perfil → **Sitio web** → pegar `https://creacionesabi.vercel.app/`.
 Conviene además fijarlo en una historia destacada y mencionarlo en la bio
 ("Catálogo y pedidos 👇").
 

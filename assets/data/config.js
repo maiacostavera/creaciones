@@ -68,5 +68,5 @@ window.SITE_CONFIG = {
     "Soy Abi y me dedico a que cada celebración tenga algo único. Hago bolsitas, golosinas y decoración personalizada para cumpleaños, y también tazas, termos y stickers con el diseño que se te ocurra. Trabajo con el personaje, los colores y los nombres que elijas: vos me contás la idea y yo la armo.",
 
   /* --- Dominio final del sitio (para compartir bien el link) --- */
-  url: "https://creaciones-abi.vercel.app",
+  url: "https://creacionesabi.vercel.app",
 };
