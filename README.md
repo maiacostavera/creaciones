@@ -15,11 +15,12 @@ individuales, y los precios. Abajo está cómo cargarlos.
 
 ## 1. Subir las fotos (lo más importante)
 
-Los productos que todavía no tienen foto muestran un dibujito provisorio que
-dice "FALTA LA FOTO". Hoy son: golosinas, decoración, kit de cumpleaños y
+Los productos que todavía no tienen foto muestran una ilustración hecha a medida
+con los colores de la marca. Hoy son: golosinas, decoración, kit de cumpleaños y
 stickers individuales.
 
-Para cargar las que faltan:
+Las ilustraciones son una solución mientras tanto, no un reemplazo: una foto real
+del producto vende mucho más. Para cargar las que faltan:
 
 ### Desde la web de GitHub, sin instalar nada
 
@@ -204,7 +205,7 @@ assets/
   data/config.js            👈 datos del negocio
   data/productos.js         👈 catálogo
   fonts/                    Baloo 2, Pacifico y Quicksand (licencia SIL OFL)
-  img/                      logo, imagen para compartir y fotos de productos
+  img/                      logo, imagen para compartir, fotos e ilustraciones
 ```
 
 ### Cambiar los colores

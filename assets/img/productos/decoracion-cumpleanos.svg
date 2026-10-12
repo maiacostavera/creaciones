@@ -1,22 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="Decoración para cumpleaños — dibujo provisorio">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="Ilustración de decoración de cumpleaños: banderines, cartel y globos">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#FFF0F6"/>
-      <stop offset="100%" stop-color="#FBD3E4"/>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF2F8"/><stop offset="100%" stop-color="#FBD3E4"/>
     </linearGradient>
-    <pattern id="p" width="60" height="60" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-      <circle cx="15" cy="15" r="3" fill="#DE4B8C" opacity="0.15"/>
+    <pattern id="puntos" width="64" height="64" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <circle cx="16" cy="16" r="3" fill="#DE4B8C" opacity="0.13"/>
     </pattern>
+    <linearGradient id="gRosa" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBB6D6"/><stop offset="100%" stop-color="#E5559B"/>
+    </linearGradient>
+    <linearGradient id="gLila" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#DCC0F2"/><stop offset="100%" stop-color="#9159C8"/>
+    </linearGradient>
   </defs>
-  <rect width="800" height="800" fill="url(#g)"/>
-  <rect width="800" height="800" fill="url(#p)"/>
-  
-    <ellipse cx="352" cy="272" rx="58" ry="70" fill="none" stroke="#DE4B8C" stroke-width="10"/>
-    <ellipse cx="456" cy="304" rx="48" ry="58" fill="none" stroke="#DE4B8C" stroke-width="10"/>
-    <path d="M352 342 q10 50 -14 96" fill="none" stroke="#DE4B8C" stroke-width="7" stroke-linecap="round"/>
-    <path d="M456 362 q-8 42 12 76" fill="none" stroke="#DE4B8C" stroke-width="7" stroke-linecap="round"/>
-    <path d="M346 342 l6 12 6 -12z" fill="#DE4B8C"/>
-  <text x="400" y="546" text-anchor="middle" font-family="Verdana, Geneva, sans-serif" font-size="40" font-weight="bold" fill="#DE4B8C">Decoración para</text>
-  <text x="400" y="596" text-anchor="middle" font-family="Verdana, Geneva, sans-serif" font-size="40" font-weight="bold" fill="#DE4B8C">cumpleaños</text>
-  <text x="400" y="664" text-anchor="middle" font-family="Verdana, Geneva, sans-serif" font-size="21" letter-spacing="3" fill="#DE4B8C" opacity="0.65">FALTA LA FOTO</text>
+  <rect width="800" height="800" fill="url(#fondo)"/>
+  <rect width="800" height="800" fill="url(#puntos)"/>
+
+  <!-- guirnalda de banderines -->
+  <path id="cuerda" d="M70 168 Q400 268 730 168" fill="none" stroke="#B4729B" stroke-width="7"/>
+  <g>
+    <path d="M118 182 l58 10 -24 76z" fill="#F7C948"/>
+    <path d="M214 204 l58 10 -24 76z" fill="url(#gRosa)"/>
+    <path d="M310 220 l58 7 -26 76z" fill="#6FB6E0"/>
+    <path d="M408 227 l58 -1 -32 74z" fill="url(#gLila)"/>
+    <path d="M506 219 l57 -10 -36 70z" fill="#F7C948"/>
+    <path d="M600 200 l56 -14 -40 68z" fill="url(#gRosa)"/>
+  </g>
+
+  <!-- globos -->
+  <g>
+    <path d="M152 530 q10 44 -10 80" fill="none" stroke="#C0638F" stroke-width="6" stroke-linecap="round"/>
+    <ellipse cx="152" cy="464" rx="62" ry="76" fill="url(#gRosa)"/>
+    <path d="M144 536 l8 14 8 -14z" fill="#E5559B"/>
+    <ellipse cx="134" cy="434" rx="15" ry="21" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+  <g>
+    <path d="M652 552 q-12 42 6 78" fill="none" stroke="#8457B4" stroke-width="6" stroke-linecap="round"/>
+    <ellipse cx="652" cy="488" rx="56" ry="68" fill="url(#gLila)"/>
+    <path d="M644 554 l8 14 8 -14z" fill="#9159C8"/>
+    <ellipse cx="636" cy="462" rx="13" ry="19" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- cartel central con moño -->
+  <path d="M400 352 q-52 -14 -52 -46 t52 18 q0 -32 52 -18 t-52 46z"
+        fill="url(#gRosa)" stroke="#FFFFFF" stroke-width="7" stroke-linejoin="round"/>
+  <rect x="246" y="356" width="308" height="192" rx="26" fill="#FFFFFF" stroke="#E5559B" stroke-width="11"/>
+  <path d="M296 420 h208" stroke="#FBD3E4" stroke-width="20" stroke-linecap="round"/>
+  <path d="M296 472 h160" stroke="#FBD3E4" stroke-width="20" stroke-linecap="round"/>
+  <path d="M400 520 c-18 -16 -28 -25 -28 -37 a14 14 0 0 1 28 -6 a14 14 0 0 1 28 6 c0 12 -10 21 -28 37z" fill="#E5559B" opacity="0.9"/>
+
+  <ellipse cx="400" cy="604" rx="214" ry="24" fill="#B4729B" opacity="0.14"/>
 </svg>
